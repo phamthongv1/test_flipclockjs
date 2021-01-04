@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./flipclock.css" rel="stylesheet">
 	<link href="./index.css" rel="stylesheet">
 	<title>Clock</title>
 </head>
+
 <body>
-	<div class="clock">
-		<div class="hour">
-			<div class="hr" id="hr"></div>
-		</div>
-		<div class="min">
-			<div class="mn" id="mn"></div>
-		</div>
-		<div class="sec">
-			<div class="sc" id="sc"></div>
-		</div>
-	</div>
-	<div class="toggleClass" onclick="toggleClass()"></div>
+	<div class="clock"></div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="./main.js"></script>
+	<script type="text/javascript">
+		var clock = $('.clock').FlipClock({
+			clockFace : 'TwelveHourClock'
+		})
+	</script>
 </body>
+
 </html>
